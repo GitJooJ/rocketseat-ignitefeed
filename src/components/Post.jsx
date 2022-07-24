@@ -1,3 +1,4 @@
+import { Comment } from './Comment';
 import styles from './Post.module.css'
 
 export function Post(){
@@ -7,7 +8,6 @@ export function Post(){
                 <div className={styles.author}>
                     <img img className={styles.avatar}
                     src="https://github.com/lucasdessy.png" />
-
                     <div className={styles.authorInfo}>
                         <strong>Lucas Dessy</strong>
                         <span>Mobile Developer</span>
@@ -25,19 +25,23 @@ export function Post(){
                     <a href="">#novoprojeto</a>{' '}
                     <a href="">#nlw</a>{' '}
                     <a href="">#rocketseat</a>
-                    </p>
-                </div>
+                </p>
+            </div>
 
-                <form className={styles.commentForm}>
-                    <strong>Deixe seu feedback</strong>
+            <form className={styles.commentForm}>
+                <strong>Deixe seu feedback</strong>
 
-                    <textarea
-                        placeholder="Deixe um comentário"
-                    />
-                    <footer>
-                        <button type="submit">Publicar</button>
-                    </footer>
-                </form>
+                <textarea
+                    placeholder="Deixe um comentário"
+                />
+                <footer>
+                    <button type="submit">Publicar</button>
+                </footer>
+            </form>
+
+            {/*<div className={styles.commentList}>
+                <Comment />
+            </div>*/}
         </article>
     );
 }
