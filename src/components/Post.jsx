@@ -18,7 +18,7 @@ export function Post(){
             </header>
         
             <div className={styles.content}>
-                <p>Fala galeraa 👋</p>
+                <p>Hey guys 👋</p>
                 <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
                 <p><a href="">jane.design/doctorcare</a></p>
                 <p> 
@@ -40,6 +40,8 @@ export function Post(){
             </form>
 
             <div className={styles.commentList}>
+                <Comment />
+                <Comment />
                 <Comment />
             </div>
         </article>
